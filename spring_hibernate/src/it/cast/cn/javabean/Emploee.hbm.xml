@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--文档说明，设置映射文件  -->
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="it.cast.cn.javabean">
+	<class name="Emploee" table="t_emploee">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="name" column="t_name" type="java.lang.String"></property>
+		<property name="age" column="t_age" type="int"></property>		
+		<property name="dept" column="t_dept" type="java.lang.String"></property>		
+	</class>
+
+</hibernate-mapping>
